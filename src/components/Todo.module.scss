@@ -1,0 +1,43 @@
+.Todo {
+	gap: 20px;
+	display: flex;
+	.content {
+		display: flex;
+		justify-content: center;
+		.cards {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex-wrap: wrap;
+			p {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.card {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 5px;
+				flex-wrap: wrap;
+				.MdDelete {
+					width: 30px;
+					height: 30px;
+					transition: 1s;
+					cursor: pointer;
+
+					&:hover {
+						border-radius: 0px;
+						background-color: red;
+						transform: scale(1.1);
+						box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.1);
+					}
+				}
+				input {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
